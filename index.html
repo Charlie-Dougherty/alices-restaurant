@@ -8,96 +8,107 @@
       The above 2 meta tages *must* come first in the <head> to consistently ensure proper document rendering.
       Any other head element should come *after* these tags
     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <!-- link to external CSS file. -->
     <link rel="stylesheet" href="styles.css">
 
     <title>Alice's Restaurant</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#Menu">Menu</a></li>
-          <li><a href="#Hours">Hours</a></li>
-          <li><a href="#Location">Location</a></li>
-        </ul>
 
-      </nav>
-    </header>
+    <div class="Landing">
+      <div class="Sign">
+        <h1>Alice's Restaurant</h1>
+        <p>You can have anything you want.</p>
 
-    <div class="Name">
-      <h1>Alice's Restaurant</h1>
-    </div>
+      </div>
 
-    <div class="Tagline">
-      <h1>You can have anything you want</h1>
-    </div>
-
-    <div class="Logo">
-      <img src="images/table-food.png" alt="Alice's Restaurant Logo">
-
-    </div>
-
-    <div class="Hours">
-      <h3>Hours</h3>
-      <p>7AM to 10PM everyday</p>
-    </div>
-    <div class="Menu" id="Menu">
-      <ul>
-        <li>Collards 9.99</li>
-        <li>Biscuits 10.99</li>
-        <li>Rice 11.22</li>
-        <li>Beans 2.00</li>
-      </ul>
-
-    </div>
-
-    <div class="Address" id="Location">
-      <address>
-        1269 88th St. NW
-        Just a half mile from the railroad track
-        Great Barrington, Massachusetts
-      </address>
     </div>
 
     <div class="Testimonials">
       <ul>
+
         <li class="Testimonial">
           <img src="images/woman.png" alt="woman">
-          <p class= "name">Malicia Jackson</p>
-          <p>I had thanksgiving dinner that couldn't be beat</p>
+          <p class= "name">Emma Golman</p>
+          <p>The finest meal I ever hard</p>
         </li>
 
         <li class="Testimonial">
           <img src="images/woman.png" alt="woman">
-          <p class= "name">Malicia Jackson</p>
-          <p>I had thanksgiving dinner that couldn't be beat</p>
+          <p class= "name">Emma Golman</p>
+          <p>The finest meal I ever hard</p>
         </li>
 
         <li class="Testimonial">
           <img src="images/woman.png" alt="woman">
-          <p class= "name">Malicia Jackson</p>
-          <p>I had thanksgiving dinner that couldn't be beat</p>
+          <p class= "name">Emma Golman</p>
+          <p>The finest meal I ever hard</p>
         </li>
 
       </ul>
 
     </div>
 
-    <div class="Blog">
-      <a href="https://google.com">Blog</a>
+    <div class="Menu">
+        <h2>menu</h2>
+        <ol>
+          <li>
+            <h3>SPECIAL #1: A WORKING WOMAN'S POTATOES</h3>
+            <p>When we say we're brewing a revolution in a pot, we mean it.</p>
+          </li>
+          <li>
+            <h3>SPECIAL #2: A RICH MAN'S THANKSGIVING</h3>
+            <p>Throw off your yoke of oppression for a day and live like a king!</p>
+          </li>
+          <li>
+            <h3>SPECIAL #3: THE COLLECTIVE SALAD</h3>
+            <p>Tired of capitalism processing food through you?</p>
+          </li>
+        </ol>
     </div>
 
-    <footer>
-      &copy; Alice's Restaurant
+    <div class="Information">
+      <div class="Location">
+        <h3>Location</h3>
+        <address>
+          1269 88th St. NW
+            1/2 mi. from the railroad track
+              Great Barrington, Massachusetts
+        </address>
+      </div>
+      <div class="About">
+        <h3>About</h3>
+        <p>
+        Inspired by the Arlo Guthrie Song, Alices has been producing foo
+        </p>
+
+      </div>
+
+      <div class="Contact">
+        <form action="/my-handling-form-page" method="post">
+          <div>
+            <label for="Name">Neme:</label>
+            <input type="text" id=name name="user_name" placeholder="Type your Name">
+          </div>
+
+          <div>
+            <label for="mail">Email:</label>
+            <input type="email" id=mail name="user_mail" placeholder="Type your Email">
+          </div>
+
+          <div>
+            <label for="msg">What's up?</label>
+            <input type="text" id=msg name="user_message" placeholder="Type your Message"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="Footer">
+      <p><strong>unite</strong> for good food</p>
     </footer>
 
-    <script type="text/javascript">
 
-      console.log("This will print in the javascript console, which is part of the standard suite of developer tools. Javascript.");
-      console.log("Note that we put the script tags right before the closing body tag.");
-      console.log("this should say the tagline:" + document.getElementsByClassName("Tagline"));
-
-    </script>
   </body>
 </html>
