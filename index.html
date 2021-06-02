@@ -8,9 +8,10 @@
       The above 2 meta tages *must* come first in the <head> to consistently ensure proper document rendering.
       Any other head element should come *after* these tags
     -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+
     <!-- link to external CSS file. -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
 
     <title>Alice's Restaurant</title>
   </head>
@@ -31,19 +32,19 @@
         <li class="Testimonial">
           <img src="images/woman.png" alt="woman">
           <p class= "name">Emma Golman</p>
-          <p>The finest meal I ever hard</p>
+          <p class="review">The finest meal I ever hard</p>
         </li>
 
         <li class="Testimonial">
           <img src="images/woman.png" alt="woman">
           <p class= "name">Emma Golman</p>
-          <p>The finest meal I ever hard</p>
+          <p class="review">The finest meal I ever hard</p>
         </li>
 
         <li class="Testimonial">
           <img src="images/woman.png" alt="woman">
           <p class= "name">Emma Golman</p>
-          <p>The finest meal I ever hard</p>
+          <p class = "review">The finest meal I ever hard</p>
         </li>
 
       </ul>
@@ -88,7 +89,7 @@
       <div class="Contact">
         <form action="/my-handling-form-page" method="post">
           <div>
-            <label for="Name">Neme:</label>
+            <label for="Name">Name:</label>
             <input type="text" id=name name="user_name" placeholder="Type your Name">
           </div>
 
